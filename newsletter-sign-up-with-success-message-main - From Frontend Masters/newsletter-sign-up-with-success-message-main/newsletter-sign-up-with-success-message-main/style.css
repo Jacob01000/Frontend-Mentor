@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(235, 18%, 26%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hide{
+    display: none;
+}
+
+/* Sign up */
+.sign-up{
+    width: 1020px;
+    height: 633px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+}
+.content-sign{
+    margin: 70px;
+    width: 450px;
+    float: left;
+}
+.h1-sign{
+    font-size: 60px;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 30px;
+}
+.p-sign{
+    color:hsl(234, 29%, 20%);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.sign-ul{
+    list-style: none;
+}
+.sign-li{
+    font-size: 15px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+form{
+    margin-top: 50px;
+}
+.form-p{
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+.form-text{
+    padding: 20px;
+    width: 450px;
+    border: 1px solid hsl(234, 29%, 20%);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.form-submit{
+margin-top: 30px;
+width: 450px;
+height: 60px;
+border: 0;
+background-color: hsl(234, 29%, 20%);
+border-radius: 8px;
+color: white;
+font-size: 17px;
+font-weight: 400;
+cursor: pointer;
+}
+
+.form-submit:active{
+    background: linear-gradient(to right, hsl(344, 100%, 54%), hsl(30, 100%, 61%));
+    box-shadow: 0px 0px 10px red;
+}
+
+.photo{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-right: 20px;
+    width:400px;
+    height:593px;
+}
+
+
+
+
+
+/* success */
+.success{
+    width: 500px;
+    min-height: 500px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 40px;
+    border-radius: 30px;
+}
+.success-photo{
+    margin-bottom: 25px;
+}
+.success-h1{
+    font-size: 55px;
+    color:hsl(234, 29%, 20%);
+   
+}
+.success-p{
+    color:hsl(234, 29%, 20%);
+    margin: 10px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.success-submit{
+    color:hsl(234, 29%, 20%);
+    width: 420px;
+    height: 60px;
+    border: 0;
+    background-color: hsl(234, 29%, 20%);
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    font-size: 17px;
+    border-radius: 10px;
+    
+}
+.success-submit:active{
+    background: linear-gradient(to right, hsl(344, 100%, 54%), hsl(30, 100%, 61%));
+    box-shadow: 0px 0px 10px red;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 1025px) {
+
+    /* Sign up */
+    .sign-up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+    .photo{
+        display: none;
+    }
+    .h1-sign{
+        font-size: 35px;
+        width: 100%;
+    }
+    .content-sign{
+        width: 70%;
+        margin: 30px;
+    }
+    .form{
+        width: 100%;
+    }
+    .p-sign{
+        width: 100%;
+    }
+    .sign-ul{
+        width: 100%;
+    }
+    .form-p{
+        width: 100%;
+    }
+    .form-submit{
+        width: 100%;
+    }
+    .form-text{
+        width: 100%;
+    }
+
+    /* success */
+    .success{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .success-h1{
+        margin-bottom: 30px;
+        width: 90%;
+        font-size: 40px;
+    }
+    .success-p{
+        margin-bottom: 300px;
+        width: 90%;
+    }
+    .success-submit{
+        width: 90%;
+    }
+    .hide{
+        display: none;
+    }
+}
